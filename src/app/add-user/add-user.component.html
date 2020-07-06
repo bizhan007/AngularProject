@@ -1,0 +1,27 @@
+<form [formGroup]="userForm" (ngSubmit)="create()">
+  <input type="text" name="name" formControlName="name" placeholder="Name"><br>
+  <div *ngIf="!userForm.controls['name'].valid && (userForm.controls['name'].touched
+  || userForm.controls['name'].touched )">
+    <div [hidden]="!userForm.controls['name'].errors.required">
+      Name is required
+    </div>
+    <div [hidden]="!userForm.controls['name'].errors.minlength">
+      Name must be longer than 5 ch
+    </div>
+  </div>
+  <input type="text" name="city" formControlName="city" placeholder="City"><br>
+  <div *ngIf="!userForm.controls['city'].valid && (userForm.controls['city'].touched
+  || userForm.controls['city'].touched )">
+    <div [hidden]="!userForm.controls['city'].errors.required">
+      City is required
+    </div>
+  </div>
+  <input type="text" name="country" formControlName="country" placeholder="Country" ><br>
+  <div *ngIf="!userForm.controls['country'].valid && (userForm.controls['country'].touched
+  || userForm.controls['country'].touched )">
+    <div [hidden]="!userForm.controls['country'].errors.required">
+      City is required
+    </div>
+  </div><br>
+  <button type="submit" [disabled]="!userForm.valid" style="margin-top: 5px;margin-bottom: 5px; border-radius: 10px">Submit</button>
+</form>

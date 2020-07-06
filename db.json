@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "gfdg",
+      "city": "gfdgdf",
+      "country": "fgdfgdfg",
+      "id": 1
+    },
+    {
+      "name": "fgdfgdfg",
+      "city": "dfgdfgdf",
+      "country": "fdsgdfgfd",
+      "id": 2
+    },
+    {
+      "name": "asdasdasd",
+      "city": "sadasdasdas",
+      "country": "asdasdasdasd",
+      "id": 3
+    },
+    {
+      "name": "asdasdasdgfhfh",
+      "city": "sadasdasdas",
+      "country": "asdasdasdasd",
+      "id": 4
+    }
+  ]
+}
